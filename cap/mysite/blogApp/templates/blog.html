@@ -1,0 +1,10 @@
+<h1>blog post</h1>
+{% block content %}
+
+{% for post in object_list %}
+  <h5>{{post.date}}|date:"y-m-d"}}
+<a href='/blogApp/{{post.id}}' >{{post.title}}</a></h5>
+
+
+{% endfor %}
+{% endblock %}

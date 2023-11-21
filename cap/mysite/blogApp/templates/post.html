@@ -1,0 +1,13 @@
+{% block content %}
+
+        <h3><a href="/blogApp/{{post.id}}">{{post.title}}</a></h3>
+        <h6>on {{post.date}}</h6>
+        <div class="container">
+
+            {{post.body|safe|linebreaks}}
+            {{post.signature|safe|linebreaks}}
+
+        </div>
+        <br><br>
+
+{% endblock %}
